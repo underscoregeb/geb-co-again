@@ -1,0 +1,22 @@
+.logotype-container {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.logotype-text {
+    font-family: "Instrument Serif", serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 2em;
+    line-height: 1;
+    margin: 0;
+}
+
+.logotype-icon {
+    height: 2em;
+    will-change: filter;
+    transition: filter 300ms;
+}
+.logotype-icon:hover {
+    filter: drop-shadow(0 0 2em hsla(0, 100%, 63%, 0.667));
+}

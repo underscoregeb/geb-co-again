@@ -1,0 +1,20 @@
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    border-bottom: 1px solid;
+}
+
+#links {
+    display: inline-flex;
+    gap: 1em;
+    align-items: center;
+}
+#links a {
+    color: unset;
+}
+#links a:hover {
+    color: var(--color);
+    background-color: var(--color);
+}
