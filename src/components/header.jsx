@@ -8,9 +8,9 @@ return (
         <div id="nav">
             <Logotype />
             <div id='links'>
-                <a href='#'>alpha</a>
-                <a href='#'>beta</a>
-                <a href='#'>gamma</a>
+                <a href='#alpha'>alpha</a>
+                <a href='#beta'>beta</a>
+                <a href='#gamma'>gamma</a>
             </div>
         </div>
     </>

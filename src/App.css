@@ -1,9 +1,26 @@
 #content {
-  max-width: 1280px;
-  margin: 0 auto;
+  max-width: 500px;
+  margin: 2rem auto;
   padding: 2rem;
-  text-align: center;
+  text-align: left;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slide-in 0.5s ease forwards;
 }
+
+@keyframes slide-in {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+#content img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+  border-radius: 16px;
+  width: 300px;
+}
+
 
 
 @keyframes logo-spin {
@@ -19,12 +36,4 @@
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
