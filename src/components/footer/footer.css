@@ -1,5 +1,5 @@
 footer {
-    border-top: 1px solid; 
+    /* border-top: 1px solid;  */
     margin-top: auto;
 }
 
@@ -7,7 +7,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: space-between; */
     gap: 1em;
 
     padding: 1em;   
@@ -16,10 +15,20 @@ footer {
     margin: 0 auto;
 }
 
-#bottomlinks {
+
+#copyright {
     display: inline-flex;
-    gap: 1em;
-    align-items: center;
+    align-items: end;
+    gap: 0.5em;
+}
+#copyright .icon-quarter {
+    height: 1.3em;
+    transform: rotate(180deg);
+}
+#copyright p {
+    height: 1em;
+    line-height: 1em;
+    margin: 0;
 }
 
 
@@ -33,14 +42,4 @@ footer a, footer a:hover {
         text-decoration: underline; /* Underline on hover */
         text-decoration-thickness: 1px; /* Adjust thickness if needed */
     }
-}
-
-/* cute animation */
-footer .grid-item {
-    transition: transform 150ms ease, filter 300ms ease;
-}
-footer a:hover .grid-item {
-    transform: rotate(calc(180deg + var(--currentRotation, 0deg)));
-    will-change: filter; /* webkit nonsense */
-    filter: drop-shadow(0 0 0.5rem currentColor);
 }
