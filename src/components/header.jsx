@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'; // Import Link
 function nav() {
   return (
     <>
+    <header>
       <div id="nav">
         <Link to="/"> {/* Use Link for the home page */}
           <Logotype />
@@ -16,6 +17,7 @@ function nav() {
           <Link to="/gamma">gamma</Link>
         </div>
       </div>
+    </header>
     </>
   );
 }
