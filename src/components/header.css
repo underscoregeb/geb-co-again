@@ -13,11 +13,16 @@
     gap: 1em;
     align-items: center;
 }
+
+/* hovering */
 a, a:hover {
     color: currentColor;
 }
-a:hover {
-    text-decoration: underline;
+
+@media (hover: hover) { /* only hover on devices that support it */
+    a:hover {
+        text-decoration: 1px underline;
+    }
 }
 
 a:hover .grid-item {

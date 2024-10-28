@@ -5,8 +5,9 @@
 
 .grid-item {
     height: 1em;
+    scale: 1;
     transform: rotate(var(--currentRotation, 0deg));
-    transition: transform 0.2s ease;
+    transition: transform 150ms ease;
 }
 
 .r90 {
