@@ -22,22 +22,22 @@ header {
 }
 
 /* hovering */
-a, a:hover {
+header a, header a:hover {
     color: currentColor;
 }
 
 @media (hover: hover) { /* only hover on devices that support it */
-    a:hover {
+    header a:hover {
         text-decoration: underline; /* Underline on hover */
         text-decoration-thickness: 1px; /* Adjust thickness if needed */
     }
 }
 
 /* cute animation */
-.grid-item {
+header .grid-item {
     transition: transform 150ms ease, filter 300ms ease;
 }
-a:hover .grid-item {
+header a:hover .grid-item {
     transform: rotate(calc(180deg + var(--currentRotation, 0deg)));
     will-change: filter; /* webkit nonsense */
     filter: drop-shadow(0 0 0.5rem currentColor);

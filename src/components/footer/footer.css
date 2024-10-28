@@ -1,0 +1,46 @@
+footer {
+    border-top: 1px solid; 
+    margin-top: auto;
+}
+
+#bottomnav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 1em;
+
+    padding: 1em;   
+
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#bottomlinks {
+    display: inline-flex;
+    gap: 1em;
+    align-items: center;
+}
+
+
+/* hovering */
+footer a, footer a:hover {
+    color: currentColor;
+}
+
+@media (hover: hover) { /* only hover on devices that support it */
+    footer a:hover {
+        text-decoration: underline; /* Underline on hover */
+        text-decoration-thickness: 1px; /* Adjust thickness if needed */
+    }
+}
+
+/* cute animation */
+footer .grid-item {
+    transition: transform 150ms ease, filter 300ms ease;
+}
+footer a:hover .grid-item {
+    transform: rotate(calc(180deg + var(--currentRotation, 0deg)));
+    will-change: filter; /* webkit nonsense */
+    filter: drop-shadow(0 0 0.5rem currentColor);
+}
