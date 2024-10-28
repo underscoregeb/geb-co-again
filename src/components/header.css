@@ -13,13 +13,13 @@
     gap: 1em;
     align-items: center;
 }
-a {
+a, a:hover {
     color: currentColor;
 }
 a:hover {
-    color: var(--background-color);
-    background-color: var(--color);
-    transition: color, background-color 0.1s linear;
+    text-decoration: underline;
+}
 
-
+a:hover .grid-item {
+    transform: rotate(calc(180deg + var(--currentRotation, 0deg)));
 }

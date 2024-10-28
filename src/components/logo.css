@@ -1,0 +1,22 @@
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-item {
+    height: 1em;
+    transform: rotate(var(--currentRotation, 0deg));
+    transition: transform 0.2s ease;
+}
+
+.r90 {
+    --currentRotation: 90deg;
+}
+
+.r180 {
+    --currentRotation: 180deg;
+}
+
+.r270 {
+    --currentRotation: 270deg;
+}
