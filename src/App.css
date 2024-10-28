@@ -1,3 +1,4 @@
+
 #content {
   max-width: 500px;
   margin: 2rem auto;
@@ -12,28 +13,11 @@
   to { opacity: 1; transform: translateY(0); }
 }
 
-#content img {
+img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   
-  border-radius: 16px;
+  border-radius: .5rem;
   width: 300px;
-}
-
-
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
 }

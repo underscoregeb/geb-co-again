@@ -13,10 +13,10 @@
     gap: 1em;
     align-items: center;
 }
-#links a {
+a {
     color: currentColor;
 }
-#links a:hover {
+a:hover {
     color: var(--background-color);
     background-color: var(--color);
     transition: color, background-color 0.1s linear;

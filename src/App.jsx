@@ -1,22 +1,24 @@
 import { useState } from 'react'
 import './App.css'
 import Header from './components/header.jsx'
-
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import Home from './Home.jsx';
+import Alpha from './Alpha.jsx';
+import Beta from './Beta.jsx';
+import Gamma from './Gamma.jsx';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
+    <BrowserRouter>
       <Header />
-      <div id='content'>
-        <img src="emblems.jpeg" alt="Tomorrow starts yesterday." />
-        <h1>Lorem Ipsum</h1>
-        <p>
-        Ex esse ullamco consequat quis mollit Lorem tempor culpa deserunt cupidatat. Ad in eiusmod qui adipisicing. Incididunt ut ea ipsum. Pariatur ex amet cillum enim ullamco adipisicing sit ut Lorem. Reprehenderit ea et aliquip pariatur. Aute sit consequat Lorem cupidatat cupidatat consequat consectetur proident veniam. Id proident officia adipisicing ex culpa reprehenderit nulla eu. Cupidatat non laboris enim reprehenderit enim anim Lorem non.
-        </p>
-      </div>
-    </>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/alpha' element={<Alpha />} />
+        <Route path='/beta' element={<Beta />} />
+        <Route path='/gamma' element={<Gamma />} />
+      </Routes>
+
+    </BrowserRouter>
   )
 }
 

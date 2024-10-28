@@ -1,5 +1,5 @@
 import React from 'react';
-import './Logotype.css'; // Create a separate CSS file for styling
+import './logotype.css';
 
 function Logotype() {
   return (

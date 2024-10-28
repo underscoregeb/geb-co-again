@@ -16,6 +16,7 @@
     height: 2em;
     will-change: filter;
     transition: filter 300ms;
+    padding-right: 2;
 }
 .logotype-icon:hover {
     filter: drop-shadow(0 0 2em hsla(0, 100%, 63%, 0.667));
