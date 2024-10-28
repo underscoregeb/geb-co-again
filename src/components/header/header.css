@@ -34,11 +34,8 @@ header a, header a:hover {
 }
 
 /* cute animation */
-header .grid-item {
-    transition: transform 150ms ease, filter 300ms ease;
-}
+
 header a:hover .grid-item {
-    transform: rotate(calc(180deg + var(--currentRotation, 0deg)));
     will-change: filter; /* webkit nonsense */
     filter: drop-shadow(0 0 0.5rem currentColor);
 }

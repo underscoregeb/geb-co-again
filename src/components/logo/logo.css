@@ -1,22 +1,11 @@
 .grid-container {
     display: inline-grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .grid-item {
     height: 1em;
     scale: 1;
-    transform: rotate(var(--currentRotation, 0deg));
-}
-
-.r90 {
-    --currentRotation: 90deg;
-}
-
-.r180 {
-    --currentRotation: 180deg;
-}
-
-.r270 {
-    --currentRotation: 270deg;
+    transform: rotate(var(--rotation, 0deg));
+    transition: transform 150ms ease, filter 300ms ease;
 }
