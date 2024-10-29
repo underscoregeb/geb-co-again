@@ -1,7 +1,7 @@
 import React from 'react';
 import './header.css';
 import Logotype from './logotype';
-import { Link } from 'react-router-dom'; // Import Link
+import { Link, NavLink } from 'react-router-dom'; // Import NavLink
 
 function nav() {
   return (
@@ -12,9 +12,9 @@ function nav() {
           <Logotype />
         </Link>
         <div id='links'>
-          <Link to="/alpha">alpha</Link> {/* Use Link for other pages */}
-          <Link to="/beta">beta</Link>
-          <Link to="/gamma">gamma</Link>
+          <NavLink to="/alpha" className={({ isActive }) => isActive ? 'active' : undefined}>alpha</NavLink>
+          <NavLink to="/beta" className={({ isActive }) => isActive ? 'active' : undefined}>beta</NavLink>
+          <NavLink to="/gamma" className={({ isActive }) => isActive ? 'active' : undefined}>gamma</NavLink>
         </div>
       </div>
     </header>

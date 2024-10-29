@@ -20,6 +20,17 @@ header {
     gap: 1em;
     align-items: center;
 }
+#links * {
+    /* transition: transform 250ms ease-in-out; */
+    /* transition: filter 250ms ease; */
+    transition: font-weight 250ms ease;
+}
+#links .active {
+    /* transform: translateY(0.5em); */
+    /* filter: drop-shadow(0 0 0.45em currentColor) */
+    font-weight: bolder;
+}
+
 
 /* hovering */
 header a, header a:hover {
@@ -31,11 +42,4 @@ header a, header a:hover {
         text-decoration: underline; /* Underline on hover */
         text-decoration-thickness: 1px; /* Adjust thickness if needed */
     }
-}
-
-/* cute animation */
-
-header a:hover .grid-item {
-    will-change: filter; /* webkit nonsense */
-    filter: drop-shadow(0 0 0.5rem currentColor);
 }

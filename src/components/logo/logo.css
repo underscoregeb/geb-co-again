@@ -7,5 +7,5 @@
     height: 1em;
     scale: 1;
     transform: rotate(var(--rotation, 0deg));
-    transition: transform 150ms ease, filter 300ms ease;
+    transition: transform 250ms ease;
 }

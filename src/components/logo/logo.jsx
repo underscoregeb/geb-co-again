@@ -1,4 +1,4 @@
-// Logo2.jsx
+
 import React, { useState, useEffect } from "react";
 import Quarter from "./quarter";
 import "./logo.css";
@@ -7,7 +7,7 @@ function randomRotation() {
     return Math.floor(Math.random() * 4) * 90; // Returns 0, 90, 180, or 270
 }
 
-function Logo2({ pathname }) {
+function Logo({ pathname }) {
     const [rotations, setRotations] = useState(
         Array(6).fill(null).map(() => randomRotation())
     );
@@ -29,4 +29,4 @@ function Logo2({ pathname }) {
     );
 }
 
-export default Logo2;
+export default Logo;

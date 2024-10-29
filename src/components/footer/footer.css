@@ -18,12 +18,11 @@ footer {
 
 #copyright {
     display: inline-flex;
-    align-items: end;
+    align-items: center;
     gap: 0.5em;
 }
 #copyright .icon-quarter {
-    height: 1.3em;
-    transform: rotate(180deg);
+    height: 1em;
 }
 #copyright p {
     height: 1em;

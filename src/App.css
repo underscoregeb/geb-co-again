@@ -5,8 +5,8 @@
   padding: 2rem;
   text-align: left;
   opacity: 0;
-  transform: translateY(20px);
-  animation: slide-in 0.5s ease forwards;
+  transform: translateY(1em);
+  animation: slide-in 250ms ease forwards;
 }
 
 @keyframes slide-in {

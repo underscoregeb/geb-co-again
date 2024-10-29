@@ -16,7 +16,8 @@ function Quarter({className, style}) {
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
         >
-            <path d="M0 2250V0h2250c-1241.81 0-2250 1008.19-2250 2250Z" />
+            {/* <path d="M0 2250V0h2250c-1241.81 0-2250 1008.19-2250 2250Z" /> */}
+            <path d="M0,562.5l0,-562.5l2250,0l0,2250l-562.5,0c0,-931.357 -756.143,-1687.5 -1687.5,-1687.5Z" />
         </svg>
     );
 }
