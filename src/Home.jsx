@@ -4,7 +4,7 @@ function Page() {
   return (
     <>
         <div className='doc-content'>
-            <img src="icecream.jpg" alt="Tomorrow starts yesterday." />
+            <img src="icecream.webp" alt="Tomorrow starts yesterday." />
             <h1>Lorem Ipsum</h1>
             <p>
                 Ex esse ullamco consequat quis mollit Lorem tempor culpa deserunt cupidatat. Ad in eiusmod qui adipisicing. Incididunt ut ea ipsum. Pariatur ex amet cillum enim ullamco adipisicing sit ut Lorem. Reprehenderit ea et aliquip pariatur. Aute sit consequat Lorem cupidatat cupidatat consequat consectetur proident veniam. Id proident officia adipisicing ex culpa reprehenderit nulla eu. Cupidatat non laboris enim reprehenderit enim anim Lorem non.

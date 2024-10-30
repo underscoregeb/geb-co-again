@@ -8,10 +8,6 @@ function nav() {
   const [clickCount, setClickCount] = useState(0);
   const [refreshLogo, setRefreshLogo] = useState(false); // New state variable
 
-  const handleMultiClick = () => {
-    setClickCount(prevCount => prevCount + 1);
-    setRefreshLogo(prev => !prev); // Toggle refreshLogo on click
-  };
   const handleRefreshLogo = () => {
     setClickCount(prevCount => prevCount + 1);
     setRefreshLogo(prev => !prev); // Toggle refreshLogo on click
