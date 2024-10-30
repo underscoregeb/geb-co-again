@@ -4,7 +4,7 @@ import Quarter from "./quarter";
 import "./logo.css";
 
 function randomRotation() {
-    return Math.floor(Math.random() * 4) * 90; // Returns 0, 90, 180, or 270
+    return Math.floor(Math.random() * 4) * 90; // returns 0, 90, 180, or 270
 }
 
 function Logo({ pathname }) {

@@ -7,7 +7,9 @@ function Logotype() {
   const location = useLocation();
   return (
     <div className="logotype-container">
-      <Logo pathname={location.pathname} />
+      <div className="logotype-icon">
+        <Logo pathname={location.pathname} />
+      </div>  
       <p className="logotype-text">The Geb Company</p>
     </div>
   );
