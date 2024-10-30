@@ -1,7 +1,7 @@
 function Page() {
     return (
       <>
-        <div id='content'>
+        <div className='doc-content'>
             <h1>Tools to <em>power</em> your business</h1>
             <p>
                 Blah blah blah

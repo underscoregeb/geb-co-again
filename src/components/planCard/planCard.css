@@ -44,6 +44,7 @@
 
 /* footer section */
 .plan-card-footer {
+    border-top: 1px solid;
     margin-top: auto;
     padding-top: 1rem;
 }
@@ -57,5 +58,4 @@
 .select-plan-button {
     width: 100%;
     padding: 0.75rem 1.5rem;
-    border-radius: 6px;
 }

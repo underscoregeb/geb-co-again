@@ -5,8 +5,7 @@ import { NavLink } from 'react-router-dom'; // Import NavLink
 
 function nav() {
   return (
-    <>
-    <header>
+    <div id="nav-container">
       <div id="nav">
         <NavLink to="/" className={({ isActive }) => isActive ? 'nav-logo active' : 'nav-logo'}> 
           <Logotype />
@@ -17,8 +16,7 @@ function nav() {
           <NavLink to="/enterprise" className={({ isActive }) => isActive ? 'active' : undefined}>Enterprise</NavLink>
         </div>
       </div>
-    </header>
-    </>
+    </div>
   );
 }
 

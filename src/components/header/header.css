@@ -1,5 +1,9 @@
-header {
-    border-bottom: 1px solid; 
+#nav-container {
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    background: linear-gradient(180deg, var(--background-color) 0%, var(--glass-background-color) 30%);
+    background-clip: padding-box;
+    border-bottom: 1px solid var(--glass-border-color);
 }
 
 #nav {
@@ -33,12 +37,12 @@ header {
 
 
 /* hovering */
-header a, header a:hover {
+#nav a, #nav a:hover {
     color: currentColor;
 }
 
 @media (hover: hover) { /* only hover on devices that support it */
-    header a:not(.active):hover {
+    #nav a:not(.active):hover {
         text-decoration: underline; /* Underline on hover */
         text-decoration-thickness: 1px; /* Adjust thickness if needed */
     }

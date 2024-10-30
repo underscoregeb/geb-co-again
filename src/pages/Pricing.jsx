@@ -25,7 +25,6 @@ const plan_starter = {
     "3 workspaces",
     "Advanced analytics",
     "50GB storage",
-    "Priority email support",
     "Unlimited workflows",
     "Basic AI features",
     "30-day revision history",
@@ -79,21 +78,21 @@ const plan_enterprise = {
     "Custom API access",
     "30-day Audit logs",
   ],
-  price: null,
+  price: "Custom",
   button: "Contact Sales"
 };
 
 function Page() {
     return (
       <>
-        <div id='content'>
+        <div className='doc-content'>
           
           <h1>Plans or something</h1>
           <p>
             pick one bro
           </p>
         </div>
-        <div className='pricing-grid'>
+        <div className='pricing-grid slide-in'>
           <PlanCard {...plan_free} />
           <PlanCard {...plan_starter} />
           <PlanCard {...plan_professional} />
