@@ -7,6 +7,7 @@ import Profile from './pages/Profile.jsx';
 import Products from './pages/Solutions.jsx';
 import Pricing from './pages/Pricing.jsx';
 import Enterprise from './pages/Enterprise.jsx';
+import Admin from './pages/Admin.jsx';
 
 import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
@@ -15,7 +16,7 @@ const Layout = () => {
   const location = useLocation();
 
   useEffect(() => {
-    const isFullscreenPage = location.pathname === '/profile';
+    const isFullscreenPage = location.pathname === '/profile' || location.pathname === '/admin';
     document.body.classList.toggle('fullscreen-mode', isFullscreenPage);
   }, [location]);
 
@@ -32,6 +33,7 @@ const Layout = () => {
           <Route path="/solutions" element={<Products />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/enterprise" element={<Enterprise />} />
+          <Route path="/admin" element={<Admin />} />
         </Routes>
       </main>
 

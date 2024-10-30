@@ -1,7 +1,7 @@
 import React from 'react';
 import './planCard.css';
 
-const PlanCard = ({ title, description, features, price, button }) => {
+const PlanCard = ({ title, description, features, price, button, url }) => {
   return (
     <div className="plan-card">
       <div className="plan-card-content">
@@ -15,9 +15,9 @@ const PlanCard = ({ title, description, features, price, button }) => {
       </div>
       <div className="plan-card-footer">
         <p className="price">{price}</p>
-        <button className="select-plan-button">
+        <a href={url}><button className="select-plan-button">
           {button || `Select ${title}`}
-        </button>
+        </button></a>
       </div>
     </div>
   );

@@ -80,7 +80,8 @@ const plan_enterprise = {
     "30-day Audit logs",
   ],
   price: "Custom",
-  button: "Contact Sales"
+  button: "Contact Sales",
+  url: "/admin"
 };
 
 function Page() {
@@ -88,7 +89,7 @@ function Page() {
       <>
         <div className='doc-content'>
           
-          <h1>Scalable workflows for all cases</h1>
+          <h1>Scalable workflows for all use cases</h1>
           <p>
             Our plans deliver the tools needed to build and scale end-to-end experiences.
           </p>

@@ -25,7 +25,7 @@ function nav() {
     } else if (clickCount > 0) {
       timer = setTimeout(() => {
         setClickCount(0);
-      }, 500);
+      }, 400);
     }
 
     return () => clearTimeout(timer);
