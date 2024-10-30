@@ -28,10 +28,9 @@ const plan_starter = {
     "Unlimited workflows",
     "Basic AI features",
     "30-day revision history",
-    "Integrate with JIRA, Asana, Slack",
     "Basic user provisioning",
     "API access",
-    "Priority feature access"
+    "Integrate with Jira and Slack",
 
   ],
   price: "$29/month",
@@ -52,7 +51,9 @@ const plan_professional = {
     "Advanced user provisioning",
     "Single Sign-On (SSO)",
     "Custom workflow templates",
-    "Complete ACLs"
+    "Complete ACLs",
+    "Priority feature access"
+
   ],
   price: "$99/month",
   button: "Start Free Trial"
@@ -87,9 +88,9 @@ function Page() {
       <>
         <div className='doc-content'>
           
-          <h1>Plans or something</h1>
+          <h1>Scalable workflows for all cases</h1>
           <p>
-            pick one bro
+            Our plans deliver the tools needed to build and scale end-to-end experiences.
           </p>
         </div>
         <div className='pricing-grid slide-in'>

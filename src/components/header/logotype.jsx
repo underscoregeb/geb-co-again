@@ -1,14 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Logo from '../logo/logo';
 import './logotype.css';
-import { useLocation } from "react-router-dom";
 
-function Logotype() {
-  const location = useLocation();
+function Logotype({ refresh }) { 
   return (
     <div className="logotype-container">
       <div className="logotype-icon">
-        <Logo pathname={location.pathname} />
+        <Logo key={refresh} /> {/* Use refresh as key to force re-render */}
       </div>  
       <p className="logotype-text">The Geb Company</p>
     </div>

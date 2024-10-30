@@ -12,10 +12,9 @@
     align-items: center;
     justify-content: space-between;
     gap: 1em;
+    padding: 1em;
 
-    padding: 1em;   
-
-    max-width: 1200px;
+    max-width: var(--page-width);
     margin: 0 auto;
 }
 

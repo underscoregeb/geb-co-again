@@ -1,40 +1,40 @@
-import './App.css'
-import Header from './components/header/header'
-import Footer from './components/footer/footer'
 
+import './App.css';
+import Header from './components/header/header';
+import Footer from './components/footer/footer';
 import Home from './Home.jsx';
-
-import Alpha from './pages/Alpha.jsx';
-import Beta from './pages/Beta.jsx';
-import Gamma from './pages/Gamma.jsx';
+import Profile from './pages/Profile.jsx';
 import Products from './pages/Solutions.jsx';
 import Pricing from './pages/Pricing.jsx';
 import Enterprise from './pages/Enterprise.jsx';
 
-
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 
 const Layout = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    const isFullscreenPage = location.pathname === '/profile';
+    document.body.classList.toggle('fullscreen-mode', isFullscreenPage);
+  }, [location]);
+
   return (
     <div className="layout">
       <header>
         <Header />
       </header>
-      
+
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/alpha" element={<Alpha />} />
-          <Route path="/beta" element={<Beta />} />
-          <Route path="/gamma" element={<Gamma />} />
-          
+          <Route path="/profile" element={<Profile />} />
           <Route path="/solutions" element={<Products />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/enterprise" element={<Enterprise />} />
         </Routes>
       </main>
-      
+
       <footer>
         <Footer />
       </footer>

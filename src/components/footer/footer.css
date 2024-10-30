@@ -23,6 +23,7 @@ footer {
 }
 #copyright .icon-quarter {
     height: 1em;
+    transition: transform var(--quarter-rotate-speed) ease, filter var(--quarter-rotate-speed) ease;
 }
 #copyright p {
     height: 1em;
@@ -32,12 +33,12 @@ footer {
 
 
 /* hovering */
-footer a, footer a:hover {
+#bottomnav a, #bottomnav a:hover {
     color: currentColor;
 }
 
 @media (hover: hover) { /* only hover on devices that support it */
-    footer a:hover {
+    #bottomnav a:hover {
         text-decoration: underline; /* Underline on hover */
         text-decoration-thickness: 1px; /* Adjust thickness if needed */
     }

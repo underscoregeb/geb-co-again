@@ -15,6 +15,10 @@ function Logo({ pathname }) {
     useEffect(() => {
         setRotations(Array(6).fill(null).map(() => randomRotation()));
     }, [pathname]);
+
+
+
+ 
     
     return (
         <div className="grid-container">
