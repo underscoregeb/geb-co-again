@@ -2,7 +2,7 @@ function Page() {
   return (
     <>
       <div className='doc-content'>
-        <h1>hidden page :3</h1>
+        <h1>Cupidatat nostrud pariatur pariatur.</h1>
         <p>
           Ad duis veniam minim sint elit sint minim ipsum dolor minim pariatur. Dolor nostrud occaecat ut. Sunt esse cupidatat enim sint incididunt veniam sit nulla officia aliquip est eu irure. Esse tempor veniam duis velit in ex. Fugiat id ad consectetur commodo pariatur occaecat ea laborum mollit velit proident labore sit ipsum aliqua. Do commodo exercitation dolore officia voluptate in voluptate do officia. Proident sint nulla veniam consectetur. Lorem nisi ex eiusmod velit in do esse commodo.
         </p>

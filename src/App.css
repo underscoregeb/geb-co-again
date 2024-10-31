@@ -31,23 +31,25 @@ main {
   transform: translateY(-100%);
   /* Slide header up */
   opacity: 0;
+  position: absolute;
 }
 
+/* turn the bottom logo into a backwards navigation arrow */
+/* prerotate for a clean animation */
 .fullscreen-mode #bottomnav .icon-quarter {
-  transform: rotate(-90deg);
+  transform: rotate(-90deg); 
 }
-
+/* use .in-view class to trigger animation */
 .fullscreen-mode #copyright.in-view .icon-quarter {
   transform: rotate(-135deg);
 }
-
+/* glow on hover */
 .fullscreen-mode #copyright:hover .icon-quarter {
   filter: drop-shadow(0 0 6px currentColor);
   
 }
 
-
-
+/* make standard pages slide in */
 .slide-in,
 .doc-content {
   opacity: 0;
@@ -61,6 +63,7 @@ main {
     transform: translateY(0);
   }
 }
+
 
 .doc-content {
   max-width: var(--content-width);
