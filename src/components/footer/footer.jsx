@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from 'react';
 import './footer.css';
 import Logo from '../logo/logo';
-import Quarter from '../logo/quarter';
+import Quart from '../logo/quart';
 import { Link } from 'react-router-dom'; 
 
 function Footer() {
@@ -38,7 +38,7 @@ function Footer() {
         <footer>
             <div id="bottomnav">
                 <Link id='copyright' to="/" ref={copyrightRef}> 
-                    <Quarter className="icon-quarter" />
+                    <Quart className="icon-quart" />
                     <p>The Geb Company</p>
                 </Link>
             </div>

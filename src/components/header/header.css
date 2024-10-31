@@ -1,7 +1,7 @@
 #nav-container {
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
-    background: linear-gradient(180deg, var(--background-color) 0%, var(--glass-background-color) 30%);
+    background: linear-gradient(180deg, var(--background-color) 0%, var(--glass-background-color) 20%);
     background-clip: padding-box;
     border-bottom: 1px solid var(--glass-border-color);
 }

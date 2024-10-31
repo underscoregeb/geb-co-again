@@ -1,7 +1,7 @@
-// Quarter.jsx
+// Quart.jsx
 import React from 'react';
 
-function Quarter({className, style}) {
+function Quart({className, style}) {
     return (
         <svg
             className={className}
@@ -23,4 +23,4 @@ function Quarter({className, style}) {
     );
 }
 
-export default Quarter;
+export default Quart;

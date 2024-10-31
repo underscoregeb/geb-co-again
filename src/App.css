@@ -2,7 +2,7 @@
   --content-width: 40em;
   --page-width: calc(var(--content-width) * 2);
   --slide-in-duration: 250ms;
-  --quarter-rotate-speed: 250ms;
+  --quart-rotate-speed: 250ms;
 }
 
 .layout {
@@ -31,20 +31,19 @@ main {
   transform: translateY(-100%);
   /* Slide header up */
   opacity: 0;
-  position: absolute;
 }
 
 /* turn the bottom logo into a backwards navigation arrow */
 /* prerotate for a clean animation */
-.fullscreen-mode #bottomnav .icon-quarter {
+.fullscreen-mode #bottomnav .icon-quart {
   transform: rotate(-90deg); 
 }
 /* use .in-view class to trigger animation */
-.fullscreen-mode #copyright.in-view .icon-quarter {
+.fullscreen-mode #copyright.in-view .icon-quart {
   transform: rotate(-135deg);
 }
 /* glow on hover */
-.fullscreen-mode #copyright:hover .icon-quarter {
+.fullscreen-mode #copyright:hover .icon-quart {
   filter: drop-shadow(0 0 6px currentColor);
   
 }

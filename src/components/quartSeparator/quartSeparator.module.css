@@ -1,0 +1,13 @@
+.rowContainer {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+}
+
+.rowItem {
+    height: 1em;
+    scale: 1;
+    transition: transform var(--quart-rotate-speed) ease;
+}

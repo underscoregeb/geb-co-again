@@ -21,9 +21,9 @@ footer {
     align-items: center;
     gap: 0.5em;
 }
-#copyright .icon-quarter {
+#copyright .icon-quart {
     height: 1em;
-    transition: transform var(--quarter-rotate-speed) ease, filter var(--quarter-rotate-speed) ease;
+    transition: transform var(--quart-rotate-speed) ease, filter var(--quart-rotate-speed) ease;
 }
 #copyright p {
     height: 1em;

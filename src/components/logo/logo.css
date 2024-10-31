@@ -7,5 +7,5 @@
     height: 1em;
     scale: 1;
     transform: rotate(var(--rotation, 0deg));
-    transition: transform var(--quarter-rotate-speed) ease;
+    transition: transform var(--quart-rotate-speed) ease;
 }
