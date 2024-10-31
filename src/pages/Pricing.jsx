@@ -15,7 +15,7 @@ const plan_free = {
   ],
   price: "$0/month",
   button: "Get Started",
-  url: "https://www.youtube.com/watch?v=GiaD7WSdb4M&list=LL&index=31&pp=gAQBiAQB"
+  url: "https://www.youtube.com/watch?v=GiaD7WSdb4M"
 };
 
 const plan_starter = {
@@ -36,7 +36,7 @@ const plan_starter = {
   ],
   price: "$29/month",
   button: "Start Free Trial",
-  url: "https://www.youtube.com/watch?v=EHqPrHTN1dU&list=LL&index=20&pp=gAQBiAQB"
+  url: "https://www.youtube.com/watch?v=EHqPrHTN1dU"
 };
 
 const plan_professional = {
@@ -59,7 +59,7 @@ const plan_professional = {
   ],
   price: "$99/month",
   button: "Start Free Trial",
-  url: "https://www.youtube.com/watch?v=Pbh_J7VI94g&list=LL&index=5&pp=gAQBiAQB"
+  url: "https://www.youtube.com/watch?v=Pbh_J7VI94g"
 };
 
 const plan_enterprise = {
