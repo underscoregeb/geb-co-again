@@ -33,6 +33,7 @@ main {
   opacity: 0;
 }
 
+
 /* turn the bottom logo into a backwards navigation arrow */
 /* prerotate for a clean animation */
 .fullscreen-mode #bottomnav .icon-quart {

@@ -5,8 +5,8 @@ function Page() {
     <>
       <div className='doc-content'>
         <img
-          src="icecream-large.webp"
-          srcSet="icecream-small.webp 480w, icecream-large.webp 1080w, icecream-full.webp 3072w"
+          src="icecream-small.webp"
+          srcSet="icecream-tiny.webp 240w, icecream-small.webp 480w, icecream-large.webp 1080w, icecream-full.webp 3072w"
           sizes="40em"
           alt="A delicious ice cream cone muah"
         />

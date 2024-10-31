@@ -10,7 +10,7 @@ function Page() {
         </p>
           <QuartSeparator speed={3000} quarts={3} />
         <h2>
-          Magna ex ullamco aliquip.
+          this is a hidden page :3
         </h2>
         <p>
           Enim laborum dolore laboris velit in fugiat ullamco elit enim. Commodo aliqua amet nisi veniam enim nisi ullamco est nisi exercitation eu. Labore nulla minim consequat laboris. Ad deserunt in irure Lorem ullamco in minim adipisicing aute qui velit reprehenderit ullamco.
