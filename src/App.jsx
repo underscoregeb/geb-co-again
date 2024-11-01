@@ -28,13 +28,14 @@ const Layout = () => {
 
       <main>
         <Routes>
-          <Route path="*" element={<Navigate to="/" replace />} /> {/* Catch-all route */}
           <Route path="/" element={<Home />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/solutions" element={<Products />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/enterprise" element={<Enterprise />} />
           <Route path="/admin" element={<Admin />} />
+          {/* Catch-all route - redirects all undefined paths to home */}
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
 
