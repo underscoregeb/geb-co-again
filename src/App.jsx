@@ -29,7 +29,6 @@ const Layout = () => {
       <main>
         <Routes>
           <Route path="*" element={<Navigate to="/" replace />} /> {/* Catch-all route */}
-          <Route path="/robots.txt" element={<Navigate to="/robots.txt" replace />} /> {/* Catch-all route */}
           <Route path="/" element={<Home />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/solutions" element={<Products />} />
