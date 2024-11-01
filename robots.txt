@@ -1,0 +1,23 @@
+# Little Lost Robot, have you ever heard of the Frankenstein complex?
+
+User-agent: Googlebot
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Bingbot 
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+

@@ -10,7 +10,7 @@ import Enterprise from './pages/Enterprise.jsx';
 import Admin from './pages/Admin.jsx';
 
 import React, { useEffect } from 'react';
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation, Navigate } from 'react-router-dom';
 
 const Layout = () => {
   const location = useLocation();
@@ -28,6 +28,8 @@ const Layout = () => {
 
       <main>
         <Routes>
+          <Route path="*" element={<Navigate to="/" replace />} /> {/* Catch-all route */}
+          <Route path="/robots.txt" element={<Navigate to="/robots.txt" replace />} /> {/* Catch-all route */}
           <Route path="/" element={<Home />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/solutions" element={<Products />} />
