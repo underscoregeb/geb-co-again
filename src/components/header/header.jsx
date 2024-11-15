@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import './header.css';
 import Logotype from './logotype';
 
-function nav() {
+function Nav() {
   const navigate = useNavigate();
   const [clickCount, setClickCount] = useState(0);
   const [refreshLogo, setRefreshLogo] = useState(false); // New state variable
@@ -44,4 +44,4 @@ function nav() {
   );
 }
 
-export default nav;
+export default Nav;

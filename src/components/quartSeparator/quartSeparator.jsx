@@ -1,11 +1,11 @@
-
-
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Quart from "../logo/quart";
 import styles from "./quartSeparator.module.css";
+import PropTypes from 'prop-types';
 
 function randomRotation() {
-    return Math.floor(Math.random() * 4) * 90; // returns 0, 90, 180, or 270
+    const rotations = [90, 180, 270];
+    return rotations[Math.floor(Math.random() * rotations.length)];
 }
 
 function QuartSeparator({ speed = 3000, quarts = 3 }) {
@@ -17,15 +17,13 @@ function QuartSeparator({ speed = 3000, quarts = 3 }) {
         const intervalId = setInterval(() => {
             const randomIndex = Math.floor(Math.random() * quarts);
             setRotations(prevRotations => prevRotations.map((rotation, index) => 
-                index === randomIndex ? randomRotation() : rotation
+                index === randomIndex ? (rotation + randomRotation()) % 360 : rotation
             ));
 
         }, speed);
 
         return () => clearInterval(intervalId); // Cleanup on unmount
-    }, []);
-
-    
+    }, [speed, quarts]);
     return (
         <div className={styles.rowContainer}>
             {rotations.map((rotation, index) => (
@@ -38,5 +36,10 @@ function QuartSeparator({ speed = 3000, quarts = 3 }) {
         </div>
     );
 }
+
+QuartSeparator.propTypes = {
+    speed: PropTypes.number,
+    quarts: PropTypes.number
+};
 
 export default QuartSeparator;

@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
 import Logo from '../logo/logo';
+import PropTypes from 'prop-types';
 import './logotype.css';
 
 function Logotype({ refresh }) { 
@@ -12,5 +12,9 @@ function Logotype({ refresh }) {
     </div>
   );
 }
+
+Logotype.propTypes = {
+  refresh: PropTypes.bool.isRequired,
+};
 
 export default Logotype;

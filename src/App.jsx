@@ -9,7 +9,7 @@ import Pricing from './pages/Pricing.jsx';
 import Enterprise from './pages/Enterprise.jsx';
 import Admin from './pages/Admin.jsx';
 
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation, Navigate } from 'react-router-dom';
 
 const Layout = () => {
