@@ -1,16 +1,16 @@
 {
   "rewrites": [
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    },
-    {
       "source": "/.well-known/matrix/server",
       "destination": "/api/matrix-server"
     },
     {
       "source": "/.well-known/matrix/client",
       "destination": "/api/matrix-client"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
