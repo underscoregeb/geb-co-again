@@ -1,6 +1,5 @@
 import ServiceCard from "../components/serviceCard/serviceCard"
 
-
 const services = [
   {
     title: "4get",
