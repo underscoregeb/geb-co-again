@@ -8,6 +8,7 @@ import Products from './pages/Solutions.jsx';
 import Pricing from './pages/Pricing.jsx';
 import Enterprise from './pages/Enterprise.jsx';
 import Admin from './pages/Admin.jsx';
+import Services from './pages/Services.jsx';
 
 import { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation, Navigate } from 'react-router-dom';
@@ -34,6 +35,7 @@ const Layout = () => {
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/enterprise" element={<Enterprise />} />
           <Route path="/admin" element={<Admin />} />
+          <Route path="/services" element={<Services />} />
           {/* Catch-all route - redirects all undefined paths to home */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
