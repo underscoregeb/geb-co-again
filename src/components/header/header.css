@@ -61,3 +61,12 @@
     filter: drop-shadow(0 0 0.45em currentColor);
 }
 
+
+.nav-logo:has(.spinny) .logotype-icon {
+    transition: filter 250ms ease;
+    will-change: filter; /* webkit nonsense */
+}
+.nav-logo:has(.spinny):hover .logotype-icon{
+    filter: drop-shadow(0 0 0.45em currentColor);
+}
+

@@ -1,7 +1,6 @@
 
 import React, { useEffect, useRef } from 'react';
 import './footer.css';
-import Logo from '../logo/logo';
 import Quart from '../logo/quart';
 import { Link } from 'react-router-dom'; 
 

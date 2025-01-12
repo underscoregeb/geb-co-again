@@ -1,0 +1,28 @@
+.service-card {
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Title styling */
+.service-card h3 {
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+}
+
+/* url styling */
+.service-urls {
+    display: flex;
+    gap: .5rem;
+}
+.service-card a {
+    font-family: monospace;
+}
+
+/* Description */
+.service-card p {
+    opacity: .90;
+    margin-bottom: 0;
+}

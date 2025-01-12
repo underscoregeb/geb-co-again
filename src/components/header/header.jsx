@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate, useLocation } from 'react-router-dom';
 import './header.css';
 import Logotype from './logotype';
+import Logo from '../logo/logo';
 
 function Nav() {
   const navigate = useNavigate();
+  const location = useLocation();
   const [clickCount, setClickCount] = useState(0);
   const [refreshLogo, setRefreshLogo] = useState(false); // New state variable
 
@@ -27,12 +29,14 @@ function Nav() {
     return () => clearTimeout(timer);
   }, [clickCount, navigate]);
 
+  const searchParams = new URLSearchParams(location.search);
+  const isSpinny = searchParams.get('spinny') === 'true';
 
   return (
     <div id="nav-container">
       <div id="nav">
         <NavLink to="/" onClick={handleRefreshLogo} className={({ isActive }) => isActive ? 'nav-logo active' : 'nav-logo'}>
-          <Logotype refresh={refreshLogo} />
+          <Logotype refresh={refreshLogo} spinny={isSpinny ? true : undefined} />
         </NavLink>
         <div id='links'>
           <NavLink to="/solutions" onClick={handleRefreshLogo} className={({ isActive }) => isActive ? 'active' : undefined}>Solutions</NavLink>

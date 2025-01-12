@@ -1,4 +1,3 @@
-
 import './App.css';
 import Header from './components/header/header';
 import Footer from './components/footer/footer';
@@ -12,12 +11,15 @@ import Services from './pages/Services.jsx';
 
 import { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation, Navigate } from 'react-router-dom';
+import PropTypes from 'prop-types';
+
+const FULLSCREEN_PAGES = ['/profile', '/admin'];
 
 const Layout = () => {
   const location = useLocation();
 
   useEffect(() => {
-    const isFullscreenPage = location.pathname === '/profile' || location.pathname === '/admin';
+    const isFullscreenPage = FULLSCREEN_PAGES.includes(location.pathname);
     document.body.classList.toggle('fullscreen-mode', isFullscreenPage);
   }, [location]);
 
@@ -28,17 +30,7 @@ const Layout = () => {
       </header>
 
       <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/solutions" element={<Products />} />
-          <Route path="/pricing" element={<Pricing />} />
-          <Route path="/enterprise" element={<Enterprise />} />
-          <Route path="/admin" element={<Admin />} />
-          <Route path="/services" element={<Services />} />
-          {/* Catch-all route - redirects all undefined paths to home */}
-          <Route path="*" element={<Navigate to="/" replace />} />
-        </Routes>
+        <AppRoutes />
       </main>
 
       <footer>
@@ -48,12 +40,30 @@ const Layout = () => {
   );
 };
 
+const AppRoutes = () => (
+  <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="/profile" element={<Profile />} />
+    <Route path="/solutions" element={<Products />} />
+    <Route path="/pricing" element={<Pricing />} />
+    <Route path="/enterprise" element={<Enterprise />} />
+    <Route path="/admin" element={<Admin />} />
+    <Route path="/services" element={<Services />} />
+    {/* Catch-all route - redirects all undefined paths to home */}
+    <Route path="*" element={<Navigate to="/" replace />} />
+  </Routes>
+);
+
 const App = () => {
   return (
     <BrowserRouter>
       <Layout />
     </BrowserRouter>
   );
+};
+
+Layout.propTypes = {
+  location: PropTypes.object,
 };
 
 export default App;

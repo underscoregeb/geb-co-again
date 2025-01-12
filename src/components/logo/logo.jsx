@@ -7,7 +7,7 @@ function randomRotation() {
     return Math.floor(Math.random() * 4) * 90; // returns 0, 90, 180, or 270
 }
 
-function Logo() {
+function Logo( { spinny } ) {
     const [rotations, setRotations] = useState(
         Array(6).fill(null).map(() => randomRotation())
     );
@@ -26,7 +26,7 @@ function Logo() {
                 <Quart 
                     key={index} 
                     style={{ '--rotation': `${rotation}deg` }}
-                    className="grid-item" 
+                    className={`grid-item ${spinny ? 'spinny' : ''}`}
                 />
             ))}
         </div>

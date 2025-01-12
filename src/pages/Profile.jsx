@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import QuartSeparator from "../components/quartSeparator/quartSeparator";
 
 function Page() {
@@ -17,6 +18,9 @@ function Page() {
         </p>
         <p>
           Duis esse in fugiat velit enim deserunt proident reprehenderit enim officia aute consectetur exercitation officia ullamco. Tempor excepteur officia proident ea consectetur ullamco. Eiusmod irure nulla pariatur exercitation anim sit aliqua cillum. Laboris duis ex in culpa sint adipisicing laborum anim. Mollit nisi aliquip minim veniam non consequat pariatur magna non ex voluptate id.
+        </p>
+        <p>
+          <Link to='/services'>see all services</Link>
         </p>
       </div>
     </>

@@ -9,3 +9,17 @@
     transform: rotate(var(--rotation, 0deg));
     transition: transform var(--quart-rotate-speed) ease;
 }
+
+.spinny {
+    animation: spin var(--quart-rotate-speed) linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(var(--rotation));
+  }
+
+  100% {
+    transform: rotate(calc(var(--rotation) + 360deg));
+  }
+}

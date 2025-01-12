@@ -1,28 +1,49 @@
-function Page() {
-    return (
-      <>
-        <div className='doc-content'>
-            <h1>Services</h1>
-            <p>
-            Reprehenderit aliqua laboris non ex. Amet qui ea culpa veniam cillum pariatur quis. Occaecat in fugiat ad non deserunt. Duis tempor labore qui tempor. Officia ex excepteur enim duis elit aliquip tempor consectetur voluptate irure id velit proident esse. Dolor aliquip mollit cupidatat eu quis labore ea. Aliquip ipsum do minim enim id irure qui est ex aute anim.
-            </p>
-            <ul>
-              <li>
-                4get
-              </li>
-              <li>
-                Minecraft
-              </li>
-              <li>
-                Matrix
-              </li>
-              <li>
-                Cinny
-              </li>
-            </ul>
-        </div>
-      </>
-    )
+import ServiceCard from "../components/serviceCard/serviceCard"
+
+const services = [
+  {
+    title: "4get",
+    description: "A proxy search engine that doesn't suck",
+    urls: ["https://4get.geb.company"]
+  },
+  {
+    title: "Minecraft Server",
+    description: "Various maps hosted for Minecraft Java",
+    urls: ["https://mc.geb.company", "https://smp.geb.company"]
+  },
+  {
+    title: "Matrix Homeserver",
+    description: "The Geb Company's private Matrix homeserver",
+    urls: ["https://matrix.geb.company"]
+  },
+  {
+    title: "Cinny",
+    description: "A web-based Matrix client",
+    urls: ["https://cinny.geb.company"]
+  },
+  {
+    title: "geb.company",
+    description: "You are here",
+    urls: ["https://geb.company?spinny=true"]
   }
-  
-  export default Page
+];
+
+function Page() {
+  return (
+    <>
+      <div className='doc-content'>
+        <h1>Services</h1>
+        <p>
+          The Geb Company Network hosts the following services.
+        </p>
+        <div className="services" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '1rem', paddingBlock: "1rem"}}>
+          {services.map(service => (
+            <ServiceCard key={service.url} {...service} />
+          ))}
+        </div>
+      </div>
+    </>
+  )
+}
+
+export default Page
