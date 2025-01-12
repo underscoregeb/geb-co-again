@@ -3,21 +3,25 @@ import ServiceCard from "../components/serviceCard/serviceCard"
 const services = [
   {
     title: "4get",
+    icon: "nf-md-magnify",
     description: "A proxy search engine that doesn't suck",
     urls: ["https://4get.geb.company"]
   },
   {
     title: "Minecraft Server",
+    icon: "nf-md-minecraft",
     description: "Various maps hosted for Minecraft Java",
     urls: ["https://mc.geb.company", "https://smp.geb.company"]
   },
   {
     title: "Matrix Homeserver",
+    icon: "nf-md-matrix",
     description: "The Geb Company's private Matrix homeserver",
     urls: ["https://matrix.geb.company"]
   },
   {
     title: "Cinny",
+    icon: "nf-md-bird",
     description: "A web-based Matrix client",
     urls: ["https://cinny.geb.company"]
   },

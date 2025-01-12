@@ -1,28 +1,36 @@
 .service-card {
     padding: 1.5rem;
     border-radius: 12px;
+    gap: .5rem;
     border: 1px solid var(--border-color);
     display: flex;
     flex-direction: column;
 }
 
+.service-card>* {
+    margin: 0;
+}
+
 /* Title styling */
 .service-card h3 {
     font-weight: 700;
-    margin: 0 0 1rem 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center; /* Align items to the baseline */
+    gap: .5rem;
 }
 
 /* url styling */
 .service-urls {
+    font-size: .8rem;
     display: flex;
+    flex-wrap: wrap;
     gap: .5rem;
-}
-.service-card a {
-    font-family: monospace;
 }
 
 /* Description */
 .service-card p {
     opacity: .90;
-    margin-bottom: 0;
+    margin: 0;
 }
