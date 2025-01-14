@@ -1,8 +1,5 @@
-# React + Vite
+# The Geb Company Homepage
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+this is my first go at using react to make a static site (i know how dumb that sounds). just something fun to tinker with.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+currently deployed on an Oracle Cloud VPS: [https://geb/company](https://geb/company)
