@@ -8,12 +8,14 @@ import Pricing from './pages/Pricing.jsx';
 import Enterprise from './pages/Enterprise.jsx';
 import Admin from './pages/Admin.jsx';
 import Services from './pages/Services.jsx';
+import Minecraft from './pages/minecraft/Minecraft.jsx';
+import Smp from './pages/minecraft/Smp.jsx';
 
 import { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-const FULLSCREEN_PAGES = ['/profile', '/admin'];
+const FULLSCREEN_PAGES = ['/profile', '/admin', '/mc', '/smp'];
 
 const Layout = () => {
   const location = useLocation();
@@ -30,7 +32,7 @@ const Layout = () => {
       </header>
 
       <main>
-        <AppRoutes />
+          <AppRoutes />
       </main>
 
       <footer>
@@ -42,15 +44,25 @@ const Layout = () => {
 
 const AppRoutes = () => (
   <Routes>
+
+    {/* the geb company */}
     <Route path="/" element={<Home />} />
-    <Route path="/profile" element={<Profile />} />
     <Route path="/solutions" element={<Products />} />
     <Route path="/pricing" element={<Pricing />} />
     <Route path="/enterprise" element={<Enterprise />} />
-    <Route path="/admin" element={<Admin />} />
     <Route path="/services" element={<Services />} />
-    {/* Catch-all route - redirects all undefined paths to home */}
+
+    {/* my stuff */}
+    <Route path="/profile" element={<Profile />} />
+    <Route path="/admin" element={<Admin />} />
+    
+    {/* services */}
+    <Route path="/mc" element={<Minecraft />} />
+    <Route path="/smp" element={<Smp />} />
+
+    {/* catch-all */}
     <Route path="*" element={<Navigate to="/" replace />} />
+
   </Routes>
 );
 

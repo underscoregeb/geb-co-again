@@ -2,16 +2,9 @@ import ServiceCard from "../components/serviceCard/serviceCard"
 
 const services = [
   {
-    title: "4get",
-    icon: "nf-md-magnify",
-    description: "A proxy search engine that doesn't suck",
-    urls: ["https://4get.geb.company"]
-  },
-  {
-    title: "Minecraft Server",
-    icon: "nf-md-minecraft",
-    description: "Various maps hosted for Minecraft Java",
-    urls: ["https://mc.geb.company", "https://smp.geb.company"]
+    title: "geb.company",
+    description: "You are here",
+    urls: ["https://geb.company?spinny=true"]
   },
   {
     title: "Matrix Homeserver",
@@ -26,9 +19,16 @@ const services = [
     urls: ["https://cinny.geb.company"]
   },
   {
-    title: "geb.company",
-    description: "You are here",
-    urls: ["https://geb.company?spinny=true"]
+    title: "Minecraft Server",
+    icon: "nf-md-minecraft",
+    description: "Various maps hosted for Minecraft Java. Homepage to come.",
+    urls: ["https://mc.geb.company", "https://smp.geb.company"]
+  },
+  {
+    title: "4get",
+    icon: "nf-md-magnify",
+    description: "A proxy search engine that doesn't suck",
+    urls: ["https://4get.geb.company"]
   }
 ];
 
