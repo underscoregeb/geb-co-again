@@ -37,16 +37,18 @@ main {
 /* turn the bottom logo into a backwards navigation arrow */
 /* prerotate for a clean animation */
 .fullscreen-mode #bottomnav .icon-quart {
-  transform: rotate(-90deg); 
+  transform: rotate(-90deg);
 }
+
 /* use .in-view class to trigger animation */
 .fullscreen-mode #copyright.in-view .icon-quart {
   transform: rotate(-135deg);
 }
+
 /* glow on hover */
 .fullscreen-mode #copyright:hover .icon-quart {
   filter: drop-shadow(0 0 6px currentColor);
-  
+
 }
 
 /* make standard pages slide in */
@@ -75,7 +77,7 @@ main {
 img {
   display: block;
   margin: auto;
-  border-radius: .5rem;
+  border-radius: var(--elem-radius);
   max-width: 100%;
   max-height: 75vh;
   height: auto;
